@@ -1,0 +1,333 @@
+/*
+Z-Index
+    This can be used to specify the stacking order of the elements in html
+    Done by CSS
+    Element should have a position (not static) for the z-index to take effect
+    Media Query:
+        @media <type> <feature>
+        Can be used to style the website based on the screen size
+    One can style with desktop->mobile or mobile->desktop
+    As much as possible, each heading should have the same padding
+    Code Refactoring:
+        - Readability
+        - Modularity
+        - Efficiency
+        - Length
+    Dont put specific things into broad elements.
+    Selectors can be combined in order to overwrite general selectors
+    Spacing is important in the syntax below.
+    Hierarchical Selectors
+        - Heirarchy is right (parent) to left (child)
+        Ex. parent child {}
+            #title .container-fluid {}
+        - Every element with the container-fluid class inside #title
+    Multiple Selectors
+        Ex. h1, h2, h3 {}
+        - h1, h2, and h3 will all be changed
+    Combined Selectors
+        Ex. div.container-fluid {}
+        - A div that has a class of container fluid
+            .container.container-fluid
+		- An element with the container AND container-fluid class
+	
+	Web Design
+		Color Theory
+			Red		- love, energy, intensity
+					- buy this item now!
+			Yellow	- joy, intellect,a ttention
+					- impossible to not look at
+					- may hurt eyes if looked at too long
+			Green	- freshness, safety, growth
+					- edible. more on food
+			Blue 	- stability, trust, serenity
+					- trustworthy. used more by business companies
+			Purple	- royalty, wealth, femininity
+		
+			Combining Colors
+				Analogous Colors
+					- taking two colors next to each other in the color wheel
+					- harmonious. works together
+					- good for navigation bars and the body of the website
+					- good for logo w/ background
+					- not good at standing out
+				Complementary Colors
+					- taking two colors in the opposite ends of the color wheel
+					- clashing palette
+					- makes the colors stand out
+					- dont use this with text w/ background
+					- use for logos and icons
+				Can also draw a triangle or square in the color wheel
+					and take the colors from the corners
+				Can use Adobe Color or ColorHunt
+		
+		Typography
+			Serif
+				- has feet
+				- use if you want to make it look serious, have autority, older
+				- good to use for a letter head in a legal company, magazine for architectural design
+				Sub-Families:
+					Old Style
+						- older, aged
+					Transitional
+					Modern
+						- authoretative but modern 
+					Slab-Serif
+				- traditional, stable, respectable
+			
+			Sans-Serif
+				- has perfect right angles
+				- makes it friendly, approachable, novel, contemporary
+				- sensible, simple, straightforward
+				- mostly used by startups
+				- used in body text to make it more legible and readable
+				Sub-Families:
+					Grotesque
+					Neo-Grotesque
+					Humanist
+						- a highly readable typeface
+						- all fonts here
+						- makes the people more likely to read it
+
+					Geometric
+
+			When looking for fonts with high legibility and readability, look for:
+				Open Shapes
+				Ample Intercharacter Spacing
+				Unambiguous Forms
+				Varying Proportions
+
+			Using lots of fonts can make for a design that is cluttered, overcomplicated, and just not very nice. 
+			But if you just use a small selection (2 fonts in 1 design), you can keep your design cleaner, clearer and just much easier to digest
+
+			Combining Fonts
+				- go for fonts with similar moods (ex. andes, bougan), and time era (garamond, ocean sans std)
+				- contrast serif-ness (ex. myriad, minion) different for heading and body.
+				- contrast in weights. heading should be reeaally bold (black or bold) while body is thin, regular, light 
+			
+			Never ever use Kristen, Greek Letters, Curlz, Viner, Papyrus, Comic Sans
+			Think what to convey
+
+		User Interface (UI) Design
+			- aesthetic. what looks good and forcing that on the user
+			Heirarchy
+				Color
+					- colors that contrast with their background are used for high heirarchy
+				Size
+					- bigger items draw eyes to it
+
+			Layout
+				- add block of text, pics, different sizes not just lines of text
+				Line Length
+					- aim for 40-60 characters per line for them to be interested
+					Too long
+						- tedious to read
+					Too short
+						- awkward to read
+
+			Alignment
+				- same alignment for the title and body to make it more consistent
+				- reduce the number of alignment points to make it more coherent
+
+			White Space
+				- empty space around the text or element
+				- space things out to make it look more expensive
+				- makes it more minimalist and elevated
+
+			Design for your Audience
+				- think what will appeal to your desired audience
+				- have the flexibility in your design skills
+
+		User Experience (UX) Design
+			- meant to be invisible
+			- amkes it unobtrusive and lets you do your thing and it feels like as if everything is easy and everything is effortless
+			Simplicity
+				- better than making it more complex/cluttered
+			Consistency
+				- make the design and functionality consistent
+				- ex. same design for the navbar in diff parts of the website
+			Reading Patterns
+				- most common reading pattern is the 
+				F-Pattern
+					- top left to top right then goes down in the left gutter
+					- have the most important contents on the left gutter
+				Z-Layout
+					- left to right then zigzag down
+			All Platform Design
+				- design for both desktop and mobile
+				- make it mobile responsive and desktop responsive
+				- avoid so many banners and cookies
+				- avoid massive scaling in mobile
+			Don't Use Your Powers for Evil
+				Dark Patterns
+					- makes the user to perform an action or behavior that is beneficial to the company/designer
+					- bad user experience
+				- good design is helping people do what they want to do and give them a good experience
+
+
+*/
+
+/* Tag */
+body {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+}
+
+p {
+	color: #8f8f8f;
+}
+
+/* Heading */
+.big-heading {
+	font-size: 3.5rem;
+	font-weight: 900;
+	line-height: 1.5;
+}
+
+.section-heading {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
+/* Containers */
+.container-fluid {
+	padding: 7% 15%;
+}
+
+/* Sections */
+.colored-section {
+	background-color: #ff4c68;
+	color: white;
+}
+
+.white-section {
+	background-color: white;
+}
+
+/* Buttons */
+.cta-btn {
+	margin: 7% 2%;
+}
+
+.title-btn {
+	margin: 5% 4% 8% 0;
+}
+
+/* Navigation Bar */
+.nav-item {
+	font-size: 1.25rem;
+	font-weight: 300;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.navbar {
+	padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+	font-family: "Ubuntu", sans-serif;
+	font-size: 2.5rem;
+	font-weight: 500;
+}
+
+/* Title */
+#title .container-fluid {
+	padding: 3% 15% 7%;
+	text-align: left;
+}
+
+.title-img {
+	width: 60%;
+	transform: rotate(25deg);
+	position: absolute;
+	right: 30%;
+	top: 11%;
+}
+
+/* Features */
+#features {
+	position: relative;
+}
+
+.features-col {
+	padding: 30px 5%;
+}
+
+.features-img {
+	color: #ef8172;
+	margin: 1rem auto;
+}
+
+.features-img:hover {
+	color: #ff4c68;
+}
+
+.features-title {
+	font-size: 1.5rem;
+}
+
+/* Testimonials */
+#testimonials {
+	background-color: #ef8172;
+}
+
+.testimonials-img {
+	border-radius: 100%;
+	margin: 20px;
+	width: 10%;
+}
+
+.testimonials-text {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
+/* Press */
+#press {
+	background-color: #ef8172;
+	padding-bottom: 3%;
+}
+
+.press-img {
+	width: 15%;
+	margin: 20px 20px 50px;
+}
+
+/* Pricing */
+#pricing {
+	padding: 100px;
+}
+
+.pricing-col {
+	padding: 2% 3%;
+}
+
+.pricing-text {
+	font-size: 3rem;
+	line-height: 1.5;
+}
+
+/* Footer */
+.footer-img {
+	margin: 20px 10px;
+}
+
+/* Media Query */
+@media (max-width: 991px) {
+	#title .container-fluid {
+		text-align: center;
+	}
+	.title-img {
+		position: static;
+		transform: rotate(0);
+	}
+}
