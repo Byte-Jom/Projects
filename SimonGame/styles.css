@@ -1,0 +1,67 @@
+body {
+  background-color: black;
+  font-family: 'PT Serif', serif;
+  margin: auto;
+  text-align: center;
+}
+
+
+/* Color Tiles */
+.tile {
+  padding: 6.37%;
+  border: 1px solid black;
+}
+
+.tile:hover {
+  opacity: 90%;
+}
+
+.rosy-brown {
+  background-color: #AE8094;
+}
+
+.light-coral {
+  background-color: #F39CA4;
+}
+
+.light-steel-blue {
+  background-color: #9BD3CB;
+}
+
+.beige {
+  background-color: #EDDDD1;
+}
+
+.white-smoke {
+  background-color: #F2F2F2;
+}
+
+.menu {
+  border-radius: 5%;
+}
+
+.pale-violet-red {
+  background-color: #DC7684;
+}
+
+.powder-blue {
+  background-color: #ABDBE3;
+}
+
+.thistle {
+  background-color: #E8CEDB;
+}
+
+.light-salmon {
+  background-color: #FCB293;
+}
+
+/* Transitions */
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+.game-over {
+  background-color: red;
+}
